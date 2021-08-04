@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "Endorse All Button",
+	"version": "1.0",
+
+	"description": "Adds an endorse-all button to the LinkedIn skills section.",
+
+	"icons": {
+		"48": "icons/endorse-48.png",
+		"96": "icons/endorse-96.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.linkedin.com/*"],
+			"js": ["endorse-all.js"]
+		}
+	]
+}
