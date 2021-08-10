@@ -13,21 +13,21 @@
 	endorseAllButton.textContent = 'Endorse all';
 	endorseAllButton.style.backgroundColor = 'rgb(5, 118, 66)';
 	endorseAllButton.onclick = () => endorseAll();
-
 	let endorseButtonClick = false;
 
 	function endorseAll() {
-		document
-			.querySelectorAll(contains('additional'))
-			.forEach(
-				(item) => item.getAttribute('aria-expanded') === 'false' && item.click()
-			);
+		const additionalSkillsButton = document.querySelector(
+			contains('additional-skills')
+		);
 
-		document
-			.querySelectorAll(contains('endorse'))
-			.forEach(
-				(item) => item.getAttribute('aria-pressed') === 'false' && item.click()
-			);
+		additionalSkillsButton.getAttribute('aria-expanded') === 'false' &&
+			additionalSkillsButton.click();
+
+		const endorseButtons = document.querySelectorAll(contains('endorse'));
+
+		endorseButtons.forEach(
+			(item) => item.getAttribute('aria-pressed') === 'false' && item.click()
+		);
 
 		endorseButtonClick = true;
 	}
