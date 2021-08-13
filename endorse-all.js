@@ -1,8 +1,5 @@
 // @ts-check
 (function () {
-	// Debug
-	let debug = true;
-
 	/**
 	 * @function
 	 * Use this function to find long selectors using only part of their name
