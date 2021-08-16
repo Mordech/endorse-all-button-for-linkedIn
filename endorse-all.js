@@ -58,13 +58,12 @@
 			if (mutation.type === 'childList') {
 				// console.log('A child node has been added or removed.');
 				if (
-					document.querySelectorAll(contains('skill-categories'))[0] &&
-					document.querySelectorAll(contains('profile-photo-edit'))[0] ===
-						undefined &&
-					document.getElementById('endorse-all') === null
+					document.querySelector(contains('skill-categories')) &&
+					document.querySelector(contains('profile-photo-edit')) === null &&
+					document.querySelector('#endorse-all') === null
 				) {
 					document
-						.querySelectorAll(contains('skill-categories'))[0]
+						.querySelector(contains('skill-categories'))
 						.firstChild.appendChild(endorseAllButton.element);
 					console.log('Endorse-all button created', endorseAllButton.element);
 					break;
