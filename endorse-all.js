@@ -7,16 +7,15 @@
    * @param {string} word
    * @returns {string}
    */
-
   function contains(word) {
     return `*[class*="${word}"]`;
   }
+  
   class EndorseAllButton {
     /**
      * @param {HTMLButtonElement} element
      * @param {Boolean} isClicked
      */
-
     constructor(element = document.createElement("button"), isClicked = false) {
       this.element = element;
       this.isClicked = isClicked;
@@ -30,9 +29,11 @@
       this.element.style.backgroundColor = "rgb(5, 118, 66)";
       this.element.onclick = () => this.endorseAll();
     }
+    
     toggleClicked() {
       this.isClicked = true;
     }
+    
     endorseAll() {
       /** @type {HTMLButtonElement} */
 
