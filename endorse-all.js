@@ -1,12 +1,14 @@
 // @ts-check
 
 (function () {
+
   class EndorseAllButton {
     /**
      * @param {HTMLButtonElement} element
      */
 
     constructor(element = document.createElement("button")) {
+
       this.element = element;
       this.element.id = "endorse-all";
       this.element.classList.add(
