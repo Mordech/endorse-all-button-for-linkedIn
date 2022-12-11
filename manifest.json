@@ -1,19 +1,21 @@
 {
-  "manifest_version": 2,
+  "$schema": "https://json.schemastore.org/chrome-manifest",
+  "manifest_version": 3,
   "name": "Endorse-All Button for LinkedIn",
-  "version": "2.1",
-
+  "version": "2.1.1",
   "description": "Adds an endorse-all button to the LinkedIn skills section.",
-
   "icons": {
     "48": "icons/endorse-48.png",
     "96": "icons/endorse-96.png"
   },
-
   "content_scripts": [
     {
-      "matches": ["*://*.linkedin.com/*"],
-      "js": ["endorse-all.js"]
+      "matches": [
+        "*://*.linkedin.com/*"
+      ],
+      "js": [
+        "endorse-all.js"
+      ]
     }
   ]
 }
