@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/chrome-manifest",
   "manifest_version": 3,
   "name": "Endorse-All Button for LinkedIn",
-  "version": "2.1.2",
+  "version": "2.3.2",
   "description": "Adds an endorse-all button to the LinkedIn skills section.",
   "icons": {
     "48": "icons/endorse-48.png",
